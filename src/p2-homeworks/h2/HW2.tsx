@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Affairs from './Affairs';
 
 // types
-export type AffairPriorityType = string; // need to fix any
+export type AffairPriorityType = string; //
 export type AffairType = {
     _id: number
     name: string
@@ -46,7 +46,7 @@ function HW2() {
             <hr/>
             homeworks 2
 
-            {/*should work (должно работать)*/}
+            {}
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
