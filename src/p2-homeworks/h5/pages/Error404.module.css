@@ -1,0 +1,16 @@
+.page {
+    background-color: #EE5050;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page__img {
+    height: 180px;
+}
+
+.page__title-text {
+    color: white;
+    font-size: 100px;
+}

@@ -1,0 +1,45 @@
+.header {
+    transform: scale(0);
+}
+
+.header_active {
+    transform: scale(1);
+    transition: all 0.3s;
+    height: 80px;
+    display: block;
+}
+
+li {
+    list-style: none;
+    font-size: 24px;
+}
+
+.header__logo img {
+    height: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header__body {
+    background-color: #EE5050;
+    font-family: Arial, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu_items {
+    display: flex;
+    margin-right: 100px;
+}
+
+.header__menu_items li {
+    margin-right: 100px;
+}
+
+
+
+
