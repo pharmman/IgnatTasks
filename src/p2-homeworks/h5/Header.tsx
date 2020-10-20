@@ -24,7 +24,8 @@ function Header(props: HeaderPropsType) {
                         <ul className={classes.header__menu_items}>
                             {props.path.map((p, index) => {
                                 return <li key={index}>
-                                    <NavLink activeClassName={classes.header__link_active} to={p.link}>{p.title}</NavLink>
+                                    <NavLink activeClassName={classes.header__link_active}
+                                             to={p.link}>{p.title}</NavLink>
                                 </li>
                             })}
                         </ul>
