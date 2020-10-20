@@ -22,9 +22,9 @@ function Header(props: HeaderPropsType) {
                         alt=""/></a>
                     <nav className={classes.header__menu}>
                         <ul className={classes.header__menu_items}>
-                            {props.path.map(p => {
-                                return <li>
-                                    <NavLink to={p.link}>{p.title}</NavLink>
+                            {props.path.map((p, index) => {
+                                return <li key={index}>
+                                    <NavLink activeClassName={classes.header__link_active} to={p.link}>{p.title}</NavLink>
                                 </li>
                             })}
                         </ul>

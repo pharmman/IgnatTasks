@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+}
+
 .header {
     transform: scale(0);
 }
@@ -38,6 +42,11 @@ a {
 
 .header__menu_items li {
     margin-right: 100px;
+}
+
+.header__link_active {
+    color: white;
+    text-decoration: underline;
 }
 
 
