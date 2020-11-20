@@ -21,8 +21,8 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     }) : [] // map options with key
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        return onChangeOption ? onChangeOption(e.currentTarget.value) : onChange  // onChange,
-        // onChangeOption
+        onChangeOption && onChangeOption(e.currentTarget.value)
+        onChange && onChange(e)
     }
     return (
         <div className={classes.box}>
