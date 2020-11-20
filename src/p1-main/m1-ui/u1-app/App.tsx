@@ -2,6 +2,7 @@ import React from 'react';
 import s from './App.module.css';
 import HW8 from '../../../p2-homeworks/h8/HW8';
 import HW9 from '../../../p2-homeworks/h9/HW9';
+import HW10 from '../../../p2-homeworks/h10/HW10';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             {/*    <HW7/>*/}
             <HW8/>
             <HW9/>
+            <HW10/>
         </div>
     );
 }
