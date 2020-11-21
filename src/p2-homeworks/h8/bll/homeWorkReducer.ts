@@ -1,35 +1,13 @@
 import {PersonType} from '../HW8';
 
-function sortByNameUp(a: any, b: any) {
-    switch (a.name > b.name) {
-        case  true:
-            return 1
-        case false:
-            return -1
-        default:
-            return 0
-    }
-}
-
-function sortByNameDown(a: any, b: any) {
-    switch (b.name > a.name) {
-        case  true:
-            return 1
-        case false:
-            return -1
-        default:
-            return 0
-    }
-}
-
 export const homeWorkReducer = (state: PersonType[], action: ActionsType): PersonType[] => {
     switch (action.type) {
         case 'sort': {
             if (action.payload.side === 'up') {
-                state.sort(sortByNameUp)
+                state.sort((a, b) => a.name > b.name ? 1 : -1)
             }
             if (action.payload.side === 'down')
-                state.sort(sortByNameDown)
+                state.sort((a, b) => a.name < b.name ? 1 : -1)
             return [...state]
         }
         case 'check': {
