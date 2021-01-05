@@ -1,0 +1,39 @@
+.dark {
+    background: dimgrey;
+}
+
+.dark-text {
+    color: aliceblue;
+}
+
+.red {
+    background: lightcoral;
+}
+
+.red-text {
+    color: aqua;
+}
+
+.some {
+    background: lightgreen;
+}
+
+.some-text {
+    color: darkslateblue;
+}
+
+.pink {
+    background: #E184CA
+}
+
+.yellow {
+    background: #FFFF80
+}
+
+.pink-text {
+    color: #FFFF80
+}
+
+.yellow-text {
+    color: #E184CA
+}
