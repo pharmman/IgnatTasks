@@ -3,7 +3,7 @@ import s from './HW12.module.css';
 import {useDispatch, useSelector} from 'react-redux';
 import {AppStoreType} from '../h10/bll/store';
 import {changeThemeC, ThemeType} from './bll/themeReducer';
-import SuperRadio from '../h7/common/c6-SuperRadio/SuperRadio';
+import {SuperRadio} from '../h7/common/c6-SuperRadio/SuperRadio';
 
 const themes = ['dark', 'red', 'some', 'pink', 'yellow'];
 
