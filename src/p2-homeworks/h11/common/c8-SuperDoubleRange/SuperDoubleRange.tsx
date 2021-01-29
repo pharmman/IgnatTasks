@@ -17,7 +17,6 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     }
 ) => {
     const onChangeCallback = (e: ChangeEvent<{}>, value: number | number[]) => {
-        debugger
         onChangeRange && onChangeRange(value)
     }
 

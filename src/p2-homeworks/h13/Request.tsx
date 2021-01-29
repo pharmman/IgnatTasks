@@ -7,7 +7,7 @@ export const Request: React.FC = () => {
     const [checked, setChecked] = useState<boolean>(false)
     const [requestInfo, setRequestInfo] = useState<string>('')
 
-    const responseStyle:CSSProperties = {
+    const responseStyle: CSSProperties = {
         textAlign: 'center',
         fontStyle: 'italic'
     }
@@ -23,10 +23,14 @@ export const Request: React.FC = () => {
             })
     }
 
+    const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setChecked(e.currentTarget.checked)
+    }
+
     return (
         <div>
             <SuperButton onClick={makeRequest}>Bla</SuperButton>
-            <SuperCheckbox checked={checked} onChange={(e) => setChecked(e.currentTarget.checked)}/>
+            <SuperCheckbox checked={checked} onChange={onChangeHandler}/> <span>Хочешь хороший ответ?</span>
             <h1 style={responseStyle}>{requestInfo}</h1>
         </div>
     )
