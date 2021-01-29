@@ -2,6 +2,8 @@ import React from 'react';
 import {Redirect, Route, Switch} from 'react-router-dom';
 import PreJunior from './pages/PreJunior';
 import Error404 from './pages/Error404';
+import Junior from './pages/Junior';
+import JuniorPlus from './pages/JuniorPlus';
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -20,9 +22,9 @@ function Routes() {
                 {/*exact нужен чтоб указать полное совподение (что после "/" ничего не будет)*/}
                 <Route path={'/'} exact render={() => <Redirect to={PATH.PRE_JUNIOR}/>}/>
 
-                <Route path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
-                <Route path={PATH.JUNIOR}/>
-                <Route path={PATH.JUNIOR_PLUS}/>
+                <Route exact path={PATH.PRE_JUNIOR} render={() => <PreJunior/>}/>
+                <Route exact path={PATH.JUNIOR} render={() => <Junior/>}/>
+                <Route exact path={PATH.JUNIOR_PLUS} render={() => <JuniorPlus/>}/>
 
                 {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
                 <Route render={() => <Error404/>}/>

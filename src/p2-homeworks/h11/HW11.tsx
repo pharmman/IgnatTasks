@@ -1,9 +1,8 @@
-import React, {useState} from "react";
-import SuperRange from "./common/c7-SuperRange/SuperRange";
-import SuperDoubleRange from "./common/c8-SuperDoubleRange/SuperDoubleRange";
+import React, {useState} from 'react';
+import SuperRange from './common/c7-SuperRange/SuperRange';
+import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange';
 
 function HW11() {
-    debugger
     const [value1, setValue1] = useState(10);
     const [value2, setValue2] = useState(100);
 
@@ -16,7 +15,6 @@ function HW11() {
         }
     }
 
-    const disabled = value1 >= value2
 
     return (
         <div>

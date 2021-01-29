@@ -9,9 +9,9 @@ export type PathType = {
 }
 
 const path: Array<PathType> = [
-    {link: '/pre-junior', title: 'Pre-Junior'},
-    {link: '/junior', title: 'Junior'},
-    {link: '/junior_plus', title: 'Junior-Plus'},
+    {link: 'pre-junior', title: 'Pre-Junior'},
+    {link: 'junior', title: 'Junior'},
+    {link: 'junior_plus', title: 'Junior-Plus'},
 ]
 
 function HW5() {
