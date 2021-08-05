@@ -4,6 +4,7 @@ import {HW13} from '../../../p2-homeworks/h13/HW13';
 import HW12 from '../../../p2-homeworks/h12/HW12';
 import HW10 from '../../../p2-homeworks/h10/HW10';
 import HW11 from '../../../p2-homeworks/h11/HW11';
+import HW4 from '../../../p2-homeworks/h4/HW4';
 
 function App() {
     return (
@@ -18,7 +19,7 @@ function App() {
             {/*<HW7/>*/}
             {/*<HW8/>*/}
             {/*<HW9/>*/}
-            <HW10/>
+            {/*<HW10/>*/}
             <HW11/>
             <HW12/>
             <HW13/>

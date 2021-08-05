@@ -29,7 +29,7 @@ export const Request: React.FC = () => {
 
     return (
         <div>
-            <SuperButton onClick={makeRequest}>Bla</SuperButton>
+            <SuperButton onClick={makeRequest}>Make Request</SuperButton>
             <SuperCheckbox checked={checked} onChange={onChangeHandler}/> <span>Хочешь хороший ответ?</span>
             <h1 style={responseStyle}>{requestInfo}</h1>
         </div>
